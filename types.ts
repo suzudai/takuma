@@ -1,6 +1,6 @@
 export enum ArticleType {
   FEATURE = '特集',
-  HISTORY = '歴史',
+  TECHNOLOGY = 'テクノロジー',
   BUSINESS = 'ビジネス',
   INTERVIEW = 'インタビュー',
   DATA = 'データ'
@@ -27,6 +27,7 @@ export interface Article {
   title: string;
   subtitle: string;
   type: ArticleType;
+  companyName: string; // New field for PR Times style
   author: string;
   publishedAt: string;
   readTime: string;
